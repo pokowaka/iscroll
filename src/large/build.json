@@ -1,0 +1,13 @@
+{
+	"insert": {
+		"OPTIONS": "\t\tresizeScrollbars: true, \t\tinfiniteUseTransform: true,\n\t\tdeceleration: 0.004,",
+		"NORMALIZATION": "if ( this.options.infiniteElements ) {\n\t\tthis.options.probeType = 3;\n\t}\n\tthis.options.infiniteUseTransform = this.options.infiniteUseTransform && this.options.useTransform;\n\tif ( this.options.shrinkScrollbars == 'scale' ) {\n\t\tthis.options.useTransition = false;\n\t} \t",
+		"_init": "\t\tif ( this.options.infiniteElements ) {\n\t\t\tthis._initInfinite();\n\t\t}\n\t\tif ( this.options.scrollbars || this.options.indicators ) {\n\t\t\tthis._initIndicators();\n\t\t}\n",
+		"_transitionTime": "indicator/_transitionTime.js",
+		"_transitionTimingFunction": "indicator/_transitionTimingFunction.js",
+		"_translate": "indicator/_translate.js"
+	},
+	"replace": {
+		"refresh": "infinite/refresh.js"
+	}
+}

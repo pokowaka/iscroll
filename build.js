@@ -55,6 +55,20 @@ var releases = {
 		postProcessing: [ 'zoom/build.json', 'indicator/build.json', 'wheel/build.json', 'snap/build.json', 'keys/build.json' ]
 	},
 
+  large: {
+		files: [
+			'large/_initIndicators.js',
+			'wheel/wheel.js',
+			'snap/snap.js',
+			'keys/keys.js',
+			'probe/_animate.js',
+			'large/infinite.js',
+			'default/handleEvent.js',
+      'large/indicator.js',
+		],
+		postProcessing: [ 'wheel/build.json', 'snap/build.json', 'keys/build.json', 'large/build.json', 'probe/build.json' ]
+	},
+
 	infinite: {
 		files: [
 			'wheel/wheel.js',
